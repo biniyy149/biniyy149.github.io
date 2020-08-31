@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Information</title>
+    <script>
+        function showFullName(){
+            let fName = document.getElementById('first_name').value;
+            let lname = document.getElementById('last_name').value;
+            let fullName = fName+""+lName;
+            document.getElementById('output').innerHTML = fullName;
+        
+        }
+    </script>
+</head>
+
+
+<body>
+    First Name: <input id="first_name" type="text"/><br/>
+    Last Name: <input id="last_name" type="text"/><br/>
+    <button onclick="showFullName()">show full name</button>
+    <p id="output"></p>
+    <h1>your name</h1>
+    <p>
+        this should say about you and a link to movie
+        for e.g. <a href="http://www.google.com/">Google</a>
+    </p>
+    <input type="text"/><br/>
+    <input type="button" value="click me"/><br/>
+    <button>Click me</button><br/>
+    <textarea></textarea>
+
+</body>
+
+</html>
