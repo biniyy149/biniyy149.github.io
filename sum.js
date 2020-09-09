@@ -1,13 +1,9 @@
 
 
 /* eslint-disable id-length */
+/* eslint_disable "valid-jsdoc" */
+/* eslint_disable "require-jsdoc" */
 "use strict";
-
-/**
- * 
- * @param {Array} arr - arrays of numbers
- * @return {number} sum - sum of numbers
- */
 
 
 function sumOf(arr){
@@ -19,3 +15,8 @@ function sumOf(arr){
     return sum;
 }
 console.log(sumOf([1,2,3]));
+/**
+ * 
+ * @param {Array} arr - arrays of numbers
+ * @return {number} sum - sum of numbers
+ */
