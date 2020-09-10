@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: maxOfThree.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,38 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: maxOfThree.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable id-length */
+"use strict";
+/**
+ * 
+ * @param {number} a the first number.
+ * @param {number} b the second number.
+ * @param {number} c the third number.
+ * @return {number} max the maximum of three.
+ */
+function maxOfThree(a,b,c){
+    let max = 0;
+    if(a>b&amp;&amp;a>c){
+        max = a;
+    }else if(b>a&amp;&amp;b>c){
+        max = b;
+    }else{
+        max = c;
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+    }
+    return max;
+}</code></pre>
+        </article>
+    </section>
 
 
 
