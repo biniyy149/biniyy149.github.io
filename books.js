@@ -53,5 +53,22 @@ function bookLibrary(){
 
     }
     document.getElementById("display").innerHTML = display;
-}        
+} 
+function  scramble(){
+    //get all the titles
+    //put all of te words into an array
+    //find all words of different lenghts and put each into own array->array of arrays
+    //join each array back into a string ->aray of strings
+    const wordStringArray =null;//array holding concatenated string of n letter words.
+    // join the array of strings into a single string with \n line breaks
+    const scrambleString = wordStringArray.join("\n");
+    //display in the text area
+    function findTitles(){
+        let titles = [];
+    }
+    const allTitles = findTitles();
+
+
+
+}       
 
