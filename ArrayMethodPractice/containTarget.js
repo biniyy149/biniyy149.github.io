@@ -37,3 +37,5 @@ function contains(node, target) {
 }
 console.log(contains(abe, "Lisa"));
 console.log(contains(abe, "Homer"));
+//declaration context which is function call then spread operator
+//function decleration in case of function parameter then rest operator

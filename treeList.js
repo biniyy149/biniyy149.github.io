@@ -5,10 +5,10 @@ function docTree(node){
         let nameValue = " ";
         console.log(node.name + ": " + node.value);
         for(let childNode of node.children){
-            //nameValue = docTree(childNode);
-            console.log(docTree(childNode));
+            nameValue = docTree(childNode);
+            
         }
-        //return nameValue;
+        return nameValue;
     }
 }
 
