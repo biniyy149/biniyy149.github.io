@@ -26,3 +26,4 @@ function printName(node){
     }
 }
 console.log(printName(abe));
+alert(abe);
