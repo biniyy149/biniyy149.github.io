@@ -1,3 +1,4 @@
+{
 class TreeNode {
     constructor(value) {
     this.value = value;
@@ -35,7 +36,50 @@ function contains(node, target) {
         //return false; //did not find the target 
     }
 }
-console.log(contains(abe, "abe"));
-console.log(contains(homer, "lisa"));
+console.log(contains(abe, "Abe"));
+console.log(contains(homer, "Homer"));
 //declaration context which is function call then spread operator
 //function decleration in case of function parameter then rest operator
+describe("contains", function(){
+
+    it("returns the subtree if we found the target", function(){
+
+        assert.deepEqual( contains(homer, "Homer"),  {
+            value: 'Homer',
+            descendents: [
+               { value: 'Bart', descendents: [] },
+               { value: 'Lisa', descendents: [] },
+               { value: 'Maggie', descendents: [] }
+            ] });
+
+    });
+
+    it("returns the subtree of the target", function(){
+
+        assert.deepEqual( contains(abe, "Abe"),  {
+            value: 'Abe',
+            descendents: [{ value: 'Homer', 
+            descendents: [
+               { value: 'Bart', descendents: [] },
+               { value: 'Lisa', descendents: [] },
+               { value: 'Maggie', descendents: [] }] } 
+        ] });
+
+    });
+
+    it("returns the node if no children", function(){
+
+        assert.deepEqual( contains(lisa, "Bart"),  {
+            value: 'Bart', descendents: []}
+        );
+    });
+    
+    it("returns false if don't found target", function(){
+
+        assert.deepEqual( contains(homer, "Bini"),
+            false
+        );
+    });
+    
+});
+}
