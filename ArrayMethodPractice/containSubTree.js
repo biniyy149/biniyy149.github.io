@@ -69,7 +69,7 @@ describe("contains", function(){
 
     it("returns the node if no children", function(){
 
-        assert.deepEqual( contains(lisa, "Bart"),  {
+        assert.deepEqual( contains(bart, "Bart"),  {
             value: 'Bart', descendents: []}
         );
     });
@@ -77,7 +77,7 @@ describe("contains", function(){
     it("returns false if don't found target", function(){
 
         assert.deepEqual( contains(homer, "Bini"),
-            false
+            undefined
         );
     });
     
