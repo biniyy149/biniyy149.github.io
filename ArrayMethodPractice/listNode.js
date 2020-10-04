@@ -1,12 +1,27 @@
-class ListNode {
-    constructor(value,next) {
-    this.value = value;
-    this.next = next;
+
+   const maggie = {val:'Maggie',next:null};
+   const lisa = {val:'Lisa',next:maggie};
+   const bart = {val:'Bart',next:lisa};;
+   const homer = {val:'Homer',next:bart};;
+   const abe = {val:'Abe',next:homer};;
+   function findNode(head,target){
+    let currentNode = head;
+    while(true){
+        if (currentNode.val ===target){
+            return currentNode;
+        }else{
+            if(currentNode.next===null){
+                return null;
+            }
+            currentNode = currentNode.next;
+        }
     }
-   }
-   const abe = new ListNode('Abe',Homer);
-   const homer = new ListNode('Homer',Bart);
-   const bart = new ListNode('Bart',Lisa);
-   const lisa = new ListNode('Lisa',Maggie);
-   const maggie = new ListNode('Maggie',null);
+    
+    }
+    console.log(findNode(abe,"Homer"));
+
+   
+   
+   
+   
 

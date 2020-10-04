@@ -1,11 +1,11 @@
-let node4 = {val:10,next:node2};
-let node3 = {val:1,next:node3};
-let node2 = {val:109,next:node4};
-let head = {val:1099,next:null};
+let node4 = {val:10,next:null};
+let node3 = {val:1,next:node4};
+let node2 = {val:109,next:node3};
+let head = {val:1099,next:node2};
 
 let nextNode = head.next;
 //remove nod3
-mode2.next = node4;
+node2.next = node4;
 //put node3 back in
 node2.next = node3;
 //find with value 109 strarting head
@@ -23,4 +23,4 @@ while(true){
 }
 
 }
-console.log(findEven())
+console.log(findNode(head,109));
