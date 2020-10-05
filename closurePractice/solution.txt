@@ -1,0 +1,22 @@
+The answer is: Pete.
+A function gets outer variables as they are now, it uses the most recent values.
+Old variable values are not saved anywhere. When a function wants a variable, 
+it takes the current value from its own Lexical Environment or the outer one.
+
+The answer is: Pete.The work() function in the code below gets name from 
+the place of its origin through the outer lexical environment reference:
+But if there were no let name in makeWorker(), then the search would go 
+outside and take the global variable as we can see from the chain above. 
+In that case the result would be "John".
+
+The answer: 0,1.
+Functions counter and counter2 are created by different invocations of makeCounter.
+So they have independent outer Lexical Environments, each one has its own count.
+
+Surely it will work just fine.
+Both nested functions are created within the same outer Lexical Environment, 
+so they share access to the same count variable:
+
+The result is an error.
+The function sayHi is declared inside the if, so it only lives inside it. 
+There is no sayHi outside.
