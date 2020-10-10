@@ -12,8 +12,12 @@ function stopWatch(startTime){
  * 
  */
 function logTime(){
-    console.log(startTime);
-    currentTime = currentTime-1;
+    console.log(currentTime);
+    if(currentTime ===0){
+        clearInterval(watchID)
+    }else{
+        currentTime = currentTime-1;
+    }
 }
 console.log(stopWatch(3));
 

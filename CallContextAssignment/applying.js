@@ -18,6 +18,8 @@ function askPassword(ok, fail) {
   };
   
 askPassword.apply(user,[function(){user.loginOk();}, function(){user.loginFail();}]);
+//askPassword(function(){user.loginOk.apply(user)},function(){user.loginFail.apply(user)});
+
   
 
 
