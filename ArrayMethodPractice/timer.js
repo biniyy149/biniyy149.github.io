@@ -20,6 +20,22 @@ function logTime(){
     }
 }
 console.log(stopWatch(3));
+console.dir([1,2,3]);
+function makeCounter(){
+    let count = 0;
+    return function(inc){
+        if(inc === undefined){
+            inc = 1;
+        }
+        if(inc > 3){
+            //return warning
+            inc = inc +1;
+            return inc;
+        }else{
+            return count++;
+        }
+    }
+}
 
 
 }
